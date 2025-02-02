@@ -17,11 +17,11 @@ Created Tomorrow column storing next-day closing price.
 Added Target column: 1 if next day’s price is higher, 0 if lower.
 Calculated rolling averages and moving ratios (2, 5, 60, 250, 1000-day windows).
 🧠 Machine Learning Models Used
-📌 1. Random Forest Classifier (Binary Classification)
+1️⃣ Random Forest Classifier (Binary Classification)
 Used to predict if the next day's stock price will increase (1) or decrease (0).
 Initial Accuracy: 52% (low precision).
 After Backtesting: Precision improved to 67%.
-📌 2. Long Short-Term Memory (LSTM) Network
+2️⃣ Long Short-Term Memory (LSTM) Network
 Deep learning model used for time-series prediction.
 Sequential Model: 50 LSTM units per layer + Dropout layers for regularization.
 Performance Metrics:
@@ -30,21 +30,21 @@ Precision: 61.05%
 Mean Absolute Error (MAE): 11.97
 Root Mean Squared Error (RMSE): 17.51
 R² Score: 0.85
-📌 3. XGBoost (Gradient Boosting for Time-Series)
+3️⃣ XGBoost (Gradient Boosting for Time-Series)
 Powerful tree-based model for structured time-series data.
 Parameters Used: n_estimators=100, learning_rate=0.05, max_depth=6.
 Performance:
 Accuracy: 81.48%
 Precision: 81.48%
 R² Score: 0.94
-📌 4. Lasso Regression (Regularized Linear Regression)
+4️⃣ Lasso Regression (Regularized Linear Regression)
 Trained on scaled features to predict the exact stock price.
 Performance:
 Accuracy: 82.54%
 Precision: 82.54%
 Mean Absolute Error (MAE): 6.73
 R² Score: 0.95
-📌 5. Lasso Regression + PCA (Dimensionality Reduction)
+5️⃣ Lasso Regression + PCA (Dimensionality Reduction)
 Principal Component Analysis (PCA) applied to retain 95% variance.
 Lower accuracy (39.68%) due to loss of important features in dimensionality reduction.
 🔥 Results & Model Comparison
@@ -55,15 +55,16 @@ XGBoost	81.48%	81.48%	0.94	7.28	11.97
 Lasso	82.54%	82.54%	0.95	6.73	11.97
 Lasso + PCA	39.68%	39.68%	N/A	N/A	N/A
 ✅ Best Performing Model: Lasso Regression (without PCA)
+
 Achieved 82.54% accuracy in predicting stock prices.
 Lowest Mean Absolute Error (MAE) among all models.
 XGBoost also performed well (81.48% accuracy) but had slightly higher error rates than Lasso.
 📈 Visualization
-Actual vs Predicted Prices (LSTM)
+📌 Actual vs Predicted Prices (LSTM)
 <p align="center"> <img src="YOUR_LSTM_PREDICTION_GRAPH.png" width="600px"> </p>
-Actual vs Predicted Prices (XGBoost)
+📌 Actual vs Predicted Prices (XGBoost)
 <p align="center"> <img src="YOUR_XGBOOST_PREDICTION_GRAPH.png" width="600px"> </p>
-Feature Importance (XGBoost)
+📌 Feature Importance (XGBoost)
 <p align="center"> <img src="YOUR_FEATURE_IMPORTANCE_GRAPH.png" width="600px"> </p>
 🚀 How to Run the Project
 🔧 Requirements
@@ -74,13 +75,13 @@ Copy
 Edit
 pip install numpy pandas matplotlib scikit-learn xgboost tensorflow keras yfinance
 📌 Steps to Run
-Clone the repository:
+Clone the repository
 bash
 Copy
 Edit
 git clone https://github.com/Vishhh25/Tesla-Stock-Prediction.git
 cd Tesla-Stock-Prediction
-Run the Jupyter Notebook:
+Run the Jupyter Notebook
 bash
 Copy
 Edit
@@ -90,3 +91,5 @@ Open Time_Series_Tesla_Stock_Price_Prediction.ipynb and execute all cells.
 📧 Email: vishwapraval@gmail.com
 
 🚀 "Predicting Tesla's stock prices using AI-driven insights!" 🚀
+
+
